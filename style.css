@@ -1,0 +1,97 @@
+/* Css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%; /*similar to vh on body*/
+    background: linear-gradient(#3535ec, #b62897);
+    background-attachment: fixed; /*ensure the color is fixed*/
+    color: #ffffff;
+}
+
+img{ /*All the images should not overcome their container*/
+    max-width: 100%;
+}
+.container{ /*It's useful to mantain lateral spaces*/
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 16px;
+}
+
+header img{
+    width: 56px;
+}
+
+textarea{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    outline: none;
+    border: none; 
+    border-radius: 16px;
+    font-size: 20px;
+    padding: 24px;
+    font-family: 'Roboto', sans-serif; /*Textarea doesn't take the previous rule, but it's an excerion. It should be ovverride.*/
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+button{
+    width: 64px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f81669;
+}
+
+button:disabled{
+    opacity: 0.6;
+    background-color: #dedede;
+}
+
+/* It works only on PC, but not on smartphone */
+/* button:active {
+transform: scale(0.8);
+} */
+
+button img{
+    vertical-align: middle;
+}
+
+.pitch-controls{
+    width: 70%;
+}
+
+input {
+    width:100%;
+    accent-color: #ffffff;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+ 
+    margin-bottom: 12px;
+}
+
+.animated-duck{
+    display:none;
+}
+
+.talking .animated-duck{
+    display:block;
+}
+
+.talking .static-duck{
+    display:none;
+}
