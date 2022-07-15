@@ -8,4 +8,4 @@ This is a web app created with basic knowledge of HTML, CSS and JavaScript to ha
 
 It uses the **Web Speech API**, in particular the _SpeechSynthesisUtterance_ interface of the Web Speech API, which represents a speech request and contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume). In this application only the pitch is regulated.
 
-
+You can try it [here](https://duckbool.netlify.app)!
